@@ -1,0 +1,38 @@
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const slider = document.querySelector('.producto-slider');
+const productos = document.querySelectorAll('.producto');
+let currentIndex = 0;
+
+function updateSlider() {
+    const offset = -currentIndex * 100; // Calcula el desplazamiento en porcentaje
+    slider.style.transform = `translateX(${offset}%)`; // Aplica el desplazamiento al slider
+
+    // Añadir la animación de desvanecimiento
+    productos.forEach((producto, index) => {
+        if (index === currentIndex) {
+            producto.classList.add('fade-in', 'show'); // Muestra el producto actual
+        } else {
+            producto.classList.remove('show'); // Oculta los demás productos
+        }
+    });
+}
+
+prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--; // Decrementa el índice si no está en el primer producto
+        updateSlider(); // Actualiza el slider
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (currentIndex < productos.length - 1) {
+        currentIndex++; // Incrementa el índice si no está en el último producto
+        updateSlider(); // Actualiza el slider
+    }
+});
+
+// Inicializar la animación en el primer producto
+document.addEventListener('DOMContentLoaded', () => {
+    productos[currentIndex].classList.add('fade-in', 'show');
+});

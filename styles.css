@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.unsplash.com/photo-1625740137603-0f5606b742af?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbnQlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D");
+    background-size: cover; /* Tamaño de la imagen de fondo */
+    background-attachment: fixed;
+    background-position: center;
+    color : #fff
+} 
+
+header {
+    background-image: url(https://s2.abcstatics.com/abc/www/multimedia/ciencia/2022/12/13/tierra-RtNM9a7Qqan9wbEG3DkHckO-1200x840@abc.jpg);
+    background-position: 50%; /* Tamaño de la imagen de fondo */
+    display: flex; /* Activa Flexbox para el contenedor */
+    justify-content: space-between; /* Espacio entre el logo y el texto */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 20px; /* Espaciado interno del encabezado */
+    color: white; /* Color del texto */
+    box-shadow: 0 4px 10px rgba(0, 183, 255, 0.534); /* Sombra para el encabezado */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    height: 80px; /* Altura del logo */
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+    border-radius: 50%; /* Borde redondeado para el logo */
+    box-shadow: 0 4px 8px rgba(27, 20, 20, 0.3); /* Sombra para el logo */
+}
+
+.header-text {
+    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 600px; /* Limita el ancho del texto */
+}
+
+.header-text h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin: 0; /* Sin margen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para el texto */
+}
+
+.header-text p {
+    font-size: 1.2em; /* Tamaño del eslogan */
+    margin-top: 5px; /* Espacio entre el título y el eslogan */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+nav a:hover {
+    background-color: rgba(139, 195, 66, 0.7); /* Color de fondo semi-transparente al pasar el mouse */
+}
+
+
+.content {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #02c4ff1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+.productos-container {
+    position: relative; /* Posición relativa */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+.producto-slider {
+    display: flex; /* Muestra los productos en una fila */
+    transition: transform 0.3s ease; /* Transición suave al cambiar de producto */
+}
+
+.producto {
+    min-width: 100%; /* Cada producto ocupa el 100% del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: center; /* Centra el texto dentro del producto */
+}
+
+.slider-controls {
+    position: absolute; /* Posiciona los controles sobre el slider */
+    top: 50%; /* Centra verticalmente */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+}
+
+button {
+    background-color: #e18956b6; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #3d721a86; /* Color de fondo al pasar el mouse */
+}
+
+.integrantes-container {
+    position: relative;
+    overflow: hidden; /* Oculta los integrantes que no están visibles */
+}
+
+.integrante-slider {
+    display: flex;
+    transition: transform 0.3s ease; /* Suaviza la transición al cambiar de integrante */
+}
+
+.integrante {
+    min-width: 100%; /* Cada integrante ocupa el 100% del contenedor */
+    text-align: center;
+}
+
+.integrante img {
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px; /* Tamaño de la imagen */
+}
+
+/* CSS para la animación de desvanecimiento */
+
+
+
